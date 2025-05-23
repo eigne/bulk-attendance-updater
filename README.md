@@ -1,4 +1,4 @@
-マネーフォワードクラウド勤怠の一括編集をより簡単にするChromeプラグイン
+マネーフォワードクラウド勤怠の一括編集をより簡単にするChrome拡張機能プラグイン
 
 <img width="298" alt="Screenshot 2025-05-24 at 1 48 36" src="https://github.com/user-attachments/assets/17eb870b-8a57-48c7-bc60-9aba553e1999" />
 
