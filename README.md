@@ -13,4 +13,5 @@
 https://www.youtube.com/watch?v=c082pGHjdF0
 
 インストール
-chrome://extensionsで「Load unpacked」を押して、フォルダーを選ぶ
+chrome://extensionsで「Load unpacked」を押して、フォルダーを選択する
+日時勤怠メニューで「一括編集」ボタンを押す
