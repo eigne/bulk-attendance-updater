@@ -9,3 +9,6 @@
 終わったら必ず「保存」ボタンを押して保存してください
 
 https://www.youtube.com/watch?v=c082pGHjdF0
+
+インストール
+chrome://extensionsで「Load unpacked」を押して、フォルダーを選ぶ
