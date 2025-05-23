@@ -16,4 +16,4 @@ https://www.youtube.com/watch?v=c082pGHjdF0
 
 chrome://extensionsで「Load unpacked」を押して、フォルダーを選ぶ
 
-日時勤怠メニューで「一括編集」ボタンを押す
+クラウド勤怠日時勤怠メニューで「一括編集」ボタンを押す
