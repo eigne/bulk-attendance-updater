@@ -11,6 +11,9 @@ function paintCells() {
         updateSelectOption(dropdown, selectedValue);
     });
 
+    /* Uncomment to automatically clear selection after painting
     selectedWorkStatuses.forEach(el => el.classList.remove('selectable-highlight'));
     selectedWorkStatuses = [];
+
+     */
 }

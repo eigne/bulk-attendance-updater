@@ -7,7 +7,7 @@ if (pluginContainer) {
     const paintInterface = document.createElement("div");
     paintInterface.textContent = "一括変更: ";
     const selectionInterface = document.createElement("div");
-    selectionInterface.textContent = "選択方法: マウス＋Shift/Altまたは以下のボタン";
+    selectionInterface.textContent = "選択方法: マウス＋Shift/Altドラッグ選択 または以下のボタン";
     selectionInterface.style.marginTop = "10px"; // Add some vertical spacing
 
     const paintSelectMenu = createPaintSelectMenu();
@@ -15,7 +15,6 @@ if (pluginContainer) {
     const selectAllButton = createSelectAllButton();
     const deselectAllButton = createDeselectAllButton();
     const invertButton = createInvertButton();
-    const skipEmptyDropdownsCheckboxContainer = createSkipEmptyCheckbox();
     const daySelector = createDaySelector();
 
     paintInterface.appendChild(paintSelectMenu);
@@ -24,7 +23,6 @@ if (pluginContainer) {
     selectionInterface.appendChild(selectAllButton);
     selectionInterface.appendChild(deselectAllButton);
     selectionInterface.appendChild(invertButton);
-    selectionInterface.appendChild(skipEmptyDropdownsCheckboxContainer);
 
     pluginContainer.prepend(selectionInterface);
     pluginContainer.prepend(paintInterface);
