@@ -1,6 +1,13 @@
 const DAYS_IN_WEEK = 7;
 
 function createPaintSelectMenu() {
+    // Find the first attendance select field to copy options from
+    const firstSelect = document.querySelector('.attendance-select-field');
+    if (!firstSelect) {
+        console.error('Could not find any attendance select fields to copy options from');
+        return null;
+    }
+
     const select = document.createElement("select");
     select.style.marginLeft = "4px";
 
@@ -14,19 +21,16 @@ function createPaintSelectMenu() {
     blankOption.textContent = "【リセット】";
     select.appendChild(blankOption);
 
-    const options = [
-        { value: "54027", label: "【オフィス出勤】正社員（フレックス休憩無し）" },
-        { value: "54026", label: "【オフィス出勤】正社員（フレックス）" },
-        { value: "24011", label: "正社員（フレックス休憩無し）" },
-        { value: "11332", label: "正社員（フレックス）" }
-    ];
-
-    options.forEach(opt => {
-        const option = document.createElement("option");
-        option.value = opt.value;
-        option.textContent = opt.label;
-        select.appendChild(option);
+    // Copy all options from the actual attendance select field
+    Array.from(firstSelect.options).forEach(originalOption => {
+        if (originalOption.value) { // Skip empty values
+            const option = document.createElement("option");
+            option.value = originalOption.value;
+            option.textContent = originalOption.textContent;
+            select.appendChild(option);
+        }
     });
+
     return select;
 }
 
