@@ -8,3 +8,7 @@
 終わったら必ず「保存」ボタンを押して保存してください
 
 https://www.youtube.com/watch?v=c082pGHjdF0
+
+Changelog:
+v1.0.0: Initial release
+v1.0.1: [Bugfix](https://github.com/eigne/bulk-attendance-updater/pull/1)
